@@ -47,7 +47,7 @@ const deletePlaylist = async (id) => {
       "DELETE FROM playlists WHERE id = $1 RETURNING *",
       id
     );
-    console.log(deletedPlaylist)
+    
     return deletedPlaylist;
   } catch (error) {
     return error;
